@@ -351,7 +351,7 @@ flowchart LR
 	A[Normal mode\nSpecial Wire/Via\nas standalone dbsStripBox objects] --> B[Eligibility filtering\ncheck whether object may be compressed]
 	B --> C[Bucket by attributes\nWireKey / ViaKey]
 	C --> D[Detect repeated spatial pattern\nY direction first\nthen X direction]
-	D --> E[Create dbsStripBoxGroup\none master + array parameters\n(nx, ny, stepx, stepy)]
+	D --> E["Create dbsStripBoxGroup<br/>one master plus array parameters<br/>nx, ny, stepx, stepy"]
 	E --> F[Compressed mode\nobjects no longer stay in World/HVTree one by one\nGroupMgr serves them]
 
 	F --> G[Query / iteration\nexpand object view from group on demand]
